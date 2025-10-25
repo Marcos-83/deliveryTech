@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthController {
 
     @GetMapping("/health")
-    public Map<String, String> health() {
+      public Map<String, String> health() {
         return Map.of(
-            "status", "UP",
+            "status: ", "UP",
             "timestamp", LocalDateTime.now().toString(),
             "service", "Delivery API",
-            "javaversion", System.getProperty("java.version")
+            "javaVersion", System.getProperty("java.version")
         );
     }
 
@@ -29,11 +29,11 @@ public class HealthController {
             );
     }
 
-    public record AppInfo(
+     public record AppInfo(
         String application,
         String version,
-        String javaVersion,
-        String frameworkVersion
+        String developer,
+        String framework
     ) {
     }
 
