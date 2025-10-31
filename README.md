@@ -2,6 +2,8 @@ Hello, Git
 <!--
 ## mvn spring-boot:run
 
+## mvn clean spring-boot:run
+
 ## http://localhost:8080/health
 
 ## http://localhost:8080/swagger-ui/index.html

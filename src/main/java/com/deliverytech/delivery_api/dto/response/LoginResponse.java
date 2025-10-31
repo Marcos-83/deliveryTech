@@ -1,17 +1,27 @@
 package com.deliverytech.delivery_api.dto.response;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+@Schema(
+     description = "Resposta quando realizar o login",
+    title = "Login Response DTO"
+)
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class LoginResponse {
-
+    
     private String token;
-    private String username;
-    private String email;
-    private String message;
 
+        public void setUsername(String name) {        
+        throw new UnsupportedOperationException("Unimplemented method 'setUsername'");
+    }
+
+    public void setMessage(String string) {      
+        throw new UnsupportedOperationException("Unimplemented method 'setMessage'");
+    }
 }
