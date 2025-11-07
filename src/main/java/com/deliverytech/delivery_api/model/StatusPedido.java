@@ -12,7 +12,7 @@ public enum StatusPedido {
     CONFIRMADO("Confirmado"),
 
     // O restaurante está preparando o pedido
-    PREPARNADO("Preparando"),
+    PREPARANDO("Preparando"),
 
     // O pedido saiu para entrega
     SAIU_PARA_ENTREGA("Saiu Para Entrega"),

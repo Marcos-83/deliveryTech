@@ -38,6 +38,7 @@ public class Restaurante {
 
     private Integer tempoEntregaMinutos;
 
+    @Builder.Default
     private Boolean ativo = true;
 
     @OneToMany(mappedBy = "restaurante", cascade = CascadeType.ALL)
